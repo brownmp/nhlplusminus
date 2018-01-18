@@ -60,8 +60,8 @@ new = subset(data, !is.na(data$Salary))
 #  ggtitle("Plus-Minus Distribution By Position")+ xlab("Position") + ylab("Plus-Minus")
 #summary(new$G...)
 
-ggplot(new,aes(G..., colour = Pos))+
-  geom_density()+
+ggplot(new,aes(G..., colour = Pos, fill = Pos))+
+  geom_density(alpha = 0.1)+
   ggtitle("Plus-Minus Distribution By Position")+ xlab("Plus-Minus") + ylab("Distribution")
 ```
 
@@ -119,8 +119,8 @@ $Average PlusMinus Per Game =\beta_0+\beta_1\times Salary+\beta_2 \times Positio
 data$G...game = data$G.../data$GP
 new = subset(data, !is.na(data$Salary))
 
-ggplot(new,aes(G...game, colour = Pos))+
-  geom_density()+
+ggplot(new,aes(G...game, colour = Pos, fill = Pos))+
+  geom_density(alpha = 0.1)+
   ggtitle("Plus-Minus Distribution By Position")+ xlab("Plus-Minus") + ylab("Distribution")
 ```
 
