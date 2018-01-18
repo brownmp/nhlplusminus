@@ -15,7 +15,7 @@ library(GGally)
 ```
 
 ```{r echo=FALSE}
-data <- read.csv("~/Documents/BU/MA 681/Final Project /NEW/2007-2017.csv")
+data <- read.csv("Data_Set.csv")
 data_PP <- read.csv("~/Documents/BU/MA 681/Final Project /NEW/2007-2017_PP.csv")
 #create row names 
 rownames(data) <- (data$Player)
